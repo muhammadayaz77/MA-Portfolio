@@ -22,9 +22,9 @@ export default function Hero() {
   };
 
   return (
-    <div className="min-h-screen text-white relative overflow-hidden pt-10">
+    <div className="">
 
-    <main className="relative z-10 px-[-10px] py-12 max-w-6xl mx-auto">
+    <main className="relative z-10 py-12 max-w-6xl mx-auto">
       {/* Top section with profile and sun icon */}
       <div className="flex items-start justify-between mb-16">
       <div
@@ -41,7 +41,7 @@ export default function Hero() {
       
     >
       {/* Rotating Profile Image */}
-      <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-gray-600 animate-spin-slow">
+      <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full overflow-hidden border-2 border-gray-600">
         <Image
           src="/Muhammad_Ayaz_ProfilePic.jpeg"
           alt="Muhammad Ayaz"
@@ -53,8 +53,8 @@ export default function Hero() {
 
       {/* Text Info */}
       <div>
-        <h2 className="text-xl font-semibold text-white">Muhammad Ayaz</h2>
-        <p className="text-gray-400">Fullstack Developer</p>
+      <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white">Muhammad Ayaz</h2>
+      <p className="text-sm sm:text-base text-gray-400">Fullstack Developer</p>
       </div>
 
       {/* Hi Emoji Following Cursor */}
@@ -90,14 +90,14 @@ export default function Hero() {
 
       {/* Main heading */}
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight text-white mb-8">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-white mb-8">
           <span className="font-extralight text-gray-100">Crafting</span> <em className="font-light" style={{fontFamily:'ui-serif, Georgia, Cambria, "Times New Roman", Times, serif'}}>digital experiences</em>
           <br />
           <span className="font-extralight text-gray-100">that</span>{" "}
-          <span className="relative inline-block">
               matter.
+          <span className="relative lg:block hidden">
               <svg
-  className="absolute top-2 -left-71 overflow-visible pointer-events-none text-blue-500"
+  className="absolute -top-17 -left-41 overflow-visible pointer-events-none text-blue-500"
   style={{ width: "850px", height: "100px" }}
   viewBox="0 0 150 50"
 >
@@ -112,8 +112,9 @@ export default function Hero() {
       </div>
 
       {/* Description paragraph */}
-      <div className="mb-12 max-w-4xl">
-        <p className="text-lg text-gray-300 leading-relaxed font-extralight ">
+      <div className="sm:mb-12 mb-5  max-w-4xl">
+      <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed font-extralight">
+
           As a <span className="text-white font-medium">Full Stack Developer</span>, I leverage modern tech
           stacks like <span className="text-white font-medium">React.js</span>,{" "}
           <span className="text-white font-medium">Next.js</span>,{" "}
@@ -126,25 +127,21 @@ export default function Hero() {
       </div>
 
       {/* Social links and resume */}
-      <div className="flex items-center gap-4 mb-8">   
+      <div className="flex flex-wrap items-center gap-4 mb-8">   
       <motion.a
-      href="/Muhammad Ayaz.pdf" // 👈 put your PDF file here (place in /public folder)
-      download // 👈 this makes it download instead of just opening
-      whileTap={{ scale: 0.9 }} // 👈 pop effect
-      className="bg-transparent border border-gray-600 text-white 
-                 hover:bg-gray-800 rounded-full px-6 py-2 
-                 flex items-center gap-2 cursor-pointer transition"
-    >
-      <Download className="w-4 h-4" />
-      Resume
-    </motion.a>
-    <div className="relative">
-      <button
-        onClick={handleCopy}
-        className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
-      >
-        <Mail className="w-5 h-5 text-gray-300" />
-      </button>
+  className="bg-transparent border border-gray-600 text-sm sm:text-base text-white 
+             hover:bg-gray-800 rounded-full px-4 sm:px-6 py-2 
+             flex items-center gap-2 cursor-pointer transition"
+>
+  <Download className="w-4 h-4 sm:w-5 sm:h-5" />
+  Resume
+</motion.a>
+    <div className="relative flex gap-4">
+    <button
+  className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
+>
+  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
+</button>
 
       {/* Popup / Tooltip */}
       {copied && (
@@ -152,35 +149,36 @@ export default function Hero() {
           Email copied!
         </div>
       )}
-    </div>
-
-
+      
       <Link
         href="https://github.com/muhammadayaz77"
         target="_blank"
-        className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
+        className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
       >
-        <Github className="w-5 h-5 text-gray-300" />
+        <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
       </Link>
 
       <Link
         href="https://www.linkedin.com/in/-muhammadayaz/"
         target="_blank"
-        className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
+        className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
       >
-        <Linkedin className="w-5 h-5 text-gray-300" />
+        <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
       </Link>
 
       <Link
         href="https://twitter.com/your-username"
         target="_blank"
-        className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
+        className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
       >
         <Twitter className="w-5 h-5 text-gray-300" />
       </Link>
+    </div>
+
+
       </div>
       {/* Scroll Down Indicator */}
-<div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center">
+<div className="absolute bottom-2 md:bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center">
   <motion.div
     animate={{ y: [0, 10, 0] }}
     transition={{ repeat: Infinity, duration: 1.5 }}
@@ -192,7 +190,7 @@ export default function Hero() {
       className="w-1.5 h-1.5 bg-gray-400 rounded-full"
     />
   </motion.div>
-  <span className="text-xs text-gray-400 mt-2">Scroll</span>
+  {/* <span className="text-xs text-gray-400 mt-2">Scroll</span> */}
 </div>
 
      

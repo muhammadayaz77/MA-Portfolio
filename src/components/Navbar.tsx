@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link"; // ✅ import Link
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,20 +20,21 @@ export default function Navbar() {
       <motion.nav
         initial={{ width: "100%", marginTop: 0, height: 70 }}
         animate={{
-          width: scrolled ? 850 : 1150,
+          width: scrolled ? "70%" : "84%", // ✅ responsive width
           marginTop: scrolled ? 16 : 0,
           height: scrolled ? 50 : 70,
         }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className={`fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between rounded-4xl max-w-6xl mx-auto py-8
-          ${scrolled ? "backdrop-blur-xl shadow-lg" : "bg-transparent"}
-          ${scrolled ? "px-5" : ""}
+        className={`fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between 
+          rounded-4xl w-full max-w-7xl mx-auto 
+         
+          ${scrolled ? "backdrop-blur-xl shadow-lg px-4 sm:px-6 lg:px-8 py-4 sm:py-6" : "bg-transparent"}
         `}
       >
-        {/* Left - Logo with Link & Pop Effect */}
+        {/* Left - Logo */}
         <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }}>
           <Link href="/" passHref>
-            <div className="relative h-10 w-10 cursor-pointer">
+            <div className="relative h-8 w-8 sm:h-10 sm:w-10 cursor-pointer">
               <Image
                 src="/logo.png"
                 alt="Logo Image"
@@ -46,10 +47,10 @@ export default function Navbar() {
         </motion.div>
 
         {/* Middle - Nav Links */}
-        <ul className="hidden md:flex gap-8 text-white text-sm font-medium">
+        <ul className="hidden md:flex gap-6 lg:gap-8 text-white text-sm font-medium">
           {["About", "Projects", "Skills"].map((item) => (
             <li key={item} className="relative cursor-pointer py-2 group">
-              <span className="transition-colors duration-300 group-hover:text-blue-300 font-medium text-[15px] text-gray-100">
+              <span className="transition-colors duration-300 group-hover:text-blue-300 font-medium text-[14px] md:text-[15px] text-gray-100">
                 {item}
               </span>
               <span
@@ -66,19 +67,18 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Right - Contact Us Button with Gradient + Glow */}
+        {/* Right - Contact Button */}
         <motion.div whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.02 }}>
-  <button
-    className="relative bg-gradient-to-b from-blue-500 to-blue-700 
-      text-white font-medium px-4 py-2 text-sm rounded-4xl
-      shadow-md shadow-blue-900/40 overflow-hidden cursor-pointer"
-  >
-    {/* Inner white glow */}
-    <span className="absolute inset-0 rounded-lg shadow-inner shadow-white/50 pointer-events-none " />
-    <span className="relative z-10 text-base px-2">Contact</span>
-  </button>
-</motion.div>
-
+          <button
+            className="relative bg-gradient-to-b from-blue-500 to-blue-700 
+              text-white font-medium px-3 sm:px-4 py-1.5 sm:py-2 
+              text-xs sm:text-sm md:text-base rounded-4xl
+              shadow-md shadow-blue-900/40 overflow-hidden cursor-pointer"
+          >
+            <span className="absolute inset-0 rounded-lg shadow-inner shadow-white/50 pointer-events-none " />
+            <span className="relative z-10 px-1 sm:px-2">Contact</span>
+          </button>
+        </motion.div>
       </motion.nav>
     </div>
   );

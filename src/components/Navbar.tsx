@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function   Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -20,15 +20,15 @@ export default function Navbar() {
       <motion.nav
         initial={{ width: "100%", marginTop: 0, height: 70 }}
         animate={{
-          width: scrolled ? "70%" : "84%", // ✅ responsive width
+          width: scrolled ? "70%" : "100%", // ✅ responsive width
           marginTop: scrolled ? 16 : 0,
           height: scrolled ? 50 : 70,
         }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         className={`fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between 
-          rounded-4xl w-full max-w-7xl mx-auto 
+          rounded-4xl w-full max-w-7xl mx-auto px-3
          
-          ${scrolled ? "backdrop-blur-xl shadow-lg px-4 sm:px-6 lg:px-8 py-4 sm:py-6" : "bg-transparent"}
+          ${scrolled ? "backdrop-blur-xl shadow-lg" : "bg-transparent"}
         `}
       >
         {/* Left - Logo */}

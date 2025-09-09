@@ -23,8 +23,7 @@ export default function Hero() {
 
   return (
     <div className="">
-
-    <main className="relative z-10 py-12 max-w-6xl mx-auto">
+    <main className="relative z-10 py-12 max-w-7xl mx-auto">
       {/* Top section with profile and sun icon */}
       <div className="flex items-start justify-between mb-16">
       <div

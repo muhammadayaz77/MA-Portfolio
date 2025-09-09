@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ThemeModeScript } from "flowbite-react";
 
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -13,7 +14,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Muhammad Ayaz",
-  description: "Introductions and skills of Muhammad Ayaz",
+  description: "Portfolio of Muhammad Ayaz",
 };
 
 export default function RootLayout({
@@ -22,10 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} bg-black`}
       >
+      <head>
+        <ThemeModeScript />
+      </head>
         {children}
       </body>
     </html>

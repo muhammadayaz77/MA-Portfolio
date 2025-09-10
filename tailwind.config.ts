@@ -1,4 +1,3 @@
-import flowbite from "flowbite/plugin";
 
 export default {
   content: [
@@ -6,5 +5,5 @@ export default {
     "./node_modules/flowbite/**/*.js",
     "./node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
-  plugins: [flowbite],
+  plugins: [],
 };

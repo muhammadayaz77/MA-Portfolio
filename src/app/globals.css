@@ -1,17 +1,7 @@
 @import "tailwindcss";
-@import "flowbite";
 
 
 
-html,body{
+/* html,body{
   overflow-x: hidden;
-}
-
-@keyframes spin-smooth {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.animate-spin-smooth {
-  animation: spin-smooth 6s linear infinite; /* 6s per rotation */
-}
+} */

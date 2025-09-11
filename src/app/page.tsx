@@ -1,3 +1,4 @@
+import GithubHistory from '@/components/GithubHistory'
 import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Projects from '@/components/Projects/Projects'
@@ -12,6 +13,7 @@ export default function Home() {
         <Hero />
         <Skill />
         <Projects />
+        <GithubHistory />
       </main>
     </div>
   )

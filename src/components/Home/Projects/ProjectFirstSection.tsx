@@ -2,53 +2,62 @@ import {
   // Frontend
   siReact,
   siTailwindcss,
+  siShadcnui,
   // Backend
   siNodedotjs,
   siExpress,
   siMongodb,
-  siRedux
+  siRedux,
 } from "simple-icons/icons";
+
 export default function ProjectFirstSection() {
   return (
-    <main className=" bg-background">
-      <section className="container max-w-7xl mx-auto py-10">
-        {/* Fixed height container */}
-        <div className="grid grid-cols-12 gap-8 h-[400px] items-stretch">
-          {/* Left side - 8 columns with image */}
-          <div className="md:col-span-8">
-          <div className="w-full h-full overflow-hidden rounded-2xl border border-gray-700 bg-gray-900 p-2 relative">
-  <img
-    src="/gem-stone.PNG"
-    alt="ICMS Project"
-    className="w-full h-full object-contain rounded-xl 
-               bg-gray-900 shadow-lg shadow-blue-500/20 opacity-90"
-  />
-  {/* Blackish overlay */}
-  <div className="absolute inset-0 bg-black/40 rounded-xl pointer-events-none" />
-</div>
-
-
+    <main className="bg-background">
+      <section className="container max-w-7xl mx-auto py-6 sm:py-10">
+        {/* Responsive grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 lg:gap-8 gap-6 items-stretch">
+          {/* Left side - Image */}
+          <div className="lg:col-span-8 col-span-12">
+            <div className="w-full h-full overflow-hidden rounded-2xl border border-gray-700 bg-gray-900 p-2 relative">
+              <img
+                src="/gem-stone.PNG"
+                alt="ICMS Project"
+                className="w-full h-full object-contain rounded-xl 
+                           bg-gray-900 shadow-lg shadow-blue-500/20 opacity-90"
+              />
+              {/* Black overlay */}
+              <div className="lg:absolute relative inset-0 bg-black/40 rounded-xl pointer-events-none" />
+            </div>
           </div>
 
-          {/* Right side - 4 columns */}
-          <div className="md:col-span-4">
-            <div className="sticky top-32">
-              <h2 className="font-semibold text-4xl">GemStone</h2>
-              <p className="text-gray-400 mt-2">
-              A smart platform for managing and showcasing gemstones with ease and clarity
+          {/* Right side - Description */}
+          <div className="lg:col-span-4 col-span-12">
+            <div className="lg:sticky block lg:top-32">
+              {/* Title */}
+              <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
+                GemStone
+              </h2>
+
+              {/* Description */}
+              <p className="text-gray-400 mt-2 text-sm sm:text-base md:text-lg">
+                A smart platform for managing and showcasing gemstones with ease
+                and clarity
               </p>
+
+              {/* Tech buttons */}
+             
               <div className="flex flex-wrap gap-3 mt-3">
 
       {/* React */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-cyan-500/30 backdrop-blur-lg hover:bg-cyan-500/30 hover:border-cyan-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`0 0 ${siReact.svg.match(/viewBox="([^"]+)"/)?.[1]}`}
           width="20"
           height="20"
-          dangerouslySetInnerHTML={{ __html: siReact.svg }}
+          dangerouslySetInnerHTML={{ __html: siReact.svg }}   
           fill={`#${siReact.hex}`}
         />
         React.js
@@ -56,9 +65,9 @@ export default function ProjectFirstSection() {
 
       
       {/* Node.js */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-green-600/30 backdrop-blur-lg hover:bg-green-600/30 hover:border-green-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`0 0 ${siNodedotjs.svg.match(/viewBox="([^"]+)"/)?.[1]}`}
@@ -71,9 +80,9 @@ export default function ProjectFirstSection() {
       </button>
 
       {/* Express.js */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-gray-500/30 backdrop-blur-lg hover:bg-gray-500/30 hover:border-gray-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`0 0 ${siExpress.svg.match(/viewBox="([^"]+)"/)?.[1]}`}
@@ -86,9 +95,9 @@ export default function ProjectFirstSection() {
       </button>
 
       {/* MongoDB */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-green-500/30 backdrop-blur-lg hover:bg-green-500/30 hover:border-green-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`0 0 ${siMongodb.svg.match(/viewBox="([^"]+)"/)?.[1]}`}
@@ -102,9 +111,9 @@ export default function ProjectFirstSection() {
 
 
       {/* Tailwind */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-cyan-400/30 backdrop-blur-lg hover:bg-cyan-400/30 hover:border-cyan-300/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`0 0 ${siTailwindcss.svg.match(/viewBox="([^"]+)"/)?.[1]}`}
@@ -117,20 +126,25 @@ export default function ProjectFirstSection() {
       </button>
 
       {/* Shadcn */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-indigo-500/30 backdrop-blur-lg hover:bg-indigo-500/30 hover:border-indigo-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         {/* No official icon in simple-icons yet, fallback circle */}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-          <circle cx="12" cy="12" r="10" fill="#6366F1" />
-        </svg>
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" // default viewBox for simple-icons
+        width="20"
+          height="20"
+        fill={`#${siShadcnui.hex}`} // brand color
+        dangerouslySetInnerHTML={{ __html: siShadcnui.svg }}
+      />
         Shadcn
       </button>
  
       {/* Redux */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-purple-500/30 backdrop-blur-lg hover:bg-purple-500/30 hover:border-purple-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox={`0 0 ${siRedux.svg.match(/viewBox="([^"]+)"/)?.[1]}`}
@@ -142,9 +156,9 @@ export default function ProjectFirstSection() {
         Redux
       </button> 
       {/* JWT */}
-      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-[13px]
+      <button className="relative flex gap-2 items-center rounded-full font-medium text-white text-xs sm:text-sm md:text-base 
                          bg-orange-500/30 backdrop-blur-lg hover:bg-orange-500/30 hover:border-orange-400/50 
-                         transition-all duration-300 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
+                         transition-all duration-300 px-3 py-2 md:px-4 md:py-2.5 shadow-[inset_0_4px_8px_rgba(0,0,0,0.6)]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

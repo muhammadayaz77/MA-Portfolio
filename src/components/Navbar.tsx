@@ -28,7 +28,7 @@ export default function   Navbar() {
         className={`fixed left-1/2 -translate-x-1/2 z-50 flex items-center justify-between 
           rounded-4xl w-full max-w-7xl mx-auto px-3
          
-          ${scrolled ? "backdrop-blur-xl shadow-lg" : "bg-transparent"}
+          ${scrolled ? "backdrop-blur-xl shadow-lg" : "bg-black border "}
         `}
       >
         {/* Left - Logo */}
@@ -47,27 +47,31 @@ export default function   Navbar() {
         </motion.div>
 
         {/* Middle - Nav Links */}
-        <ul className="hidden md:flex gap-6 lg:gap-8 text-white text-sm font-medium">
-          {["About", "Projects", "Skills"].map((item) => (
-            <li key={item} className="relative cursor-pointer py-2 group">
-              <span className="transition-colors duration-300 group-hover:text-blue-300 font-medium text-[14px] md:text-[15px] text-gray-100">
-                {item}
-              </span>
-              <span
-                className="
-                  pointer-events-none
-                  absolute left-0 -bottom-0.5 h-0.5 w-full
-                  origin-left scale-x-0
-                  rounded-full bg-blue-400
-                  transition-transform duration-300 ease-out
-                  group-hover:scale-x-100
-                "
-              />
-            </li>
-          ))}
-        </ul>
+<ul className="hidden md:flex gap-6 lg:gap-8 text-white text-sm font-medium">
+  {["About", "Projects", "Skills"].map((item) => (
+    <li key={item} className="relative cursor-pointer py-2 group">
+      <Link
+        href={`/${item.toLowerCase()}`}
+        className="transition-colors duration-300 group-hover:text-blue-300 font-medium text-[14px] md:text-[15px] text-gray-100"
+      >
+        {item}
+      </Link>
+      <span
+        className="
+          pointer-events-none
+          absolute left-0 -bottom-0.5 h-0.5 w-full
+          origin-left scale-x-0
+          rounded-full bg-blue-400
+          transition-transform duration-300 ease-out
+          group-hover:scale-x-100
+        "
+      />
+    </li>
+  ))}
+</ul>
 
         {/* Right - Contact Button */}
+        <Link href='/contact'>
         <motion.div whileTap={{ scale: 0.95 }} whileHover={{ scale: 1.02 }}>
           <button
             className="relative bg-gradient-to-b from-blue-500 to-blue-700 
@@ -79,6 +83,7 @@ export default function   Navbar() {
             <span className="relative z-10 px-1 sm:px-2">Contact</span>
           </button>
         </motion.div>
+        </Link>
       </motion.nav>
     </div>
   );

@@ -1,5 +1,5 @@
-import SkillLeftSection from '../components/Skill/SkillLeftSection';
-import SkillRightSection from '../components/Skill/SkillRightSection';
+import SkillLeftSection from '@/components/Home/Skills/SkillLeftSection';
+import { SkillRightSection } from './Skills/SkillRightSection';
 
 export default function Skill() {
   return (

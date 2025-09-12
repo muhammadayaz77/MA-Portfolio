@@ -136,18 +136,36 @@ export default function Hero() {
   Resume
 </motion.a>
     <div className="relative flex gap-4">
-    <button
-  className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
->
-  <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
-</button>
+    
 
-      {/* Popup / Tooltip */}
-      {copied && (
-        <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white text-white text-sm px-3 py-3 rounded-md shadow-lg w-10">
-          Email copied!
-        </div>
-      )}
+  {/* Popup / Tooltip */}
+  <div className="relative">
+  <button
+    onClick={handleCopy}
+    className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors cursor-pointer"
+  >
+    <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-gray-300" />
+  </button>
+
+  {/* Popup / Tooltip */}
+  <AnimatePresence>
+    {copied && (
+      <motion.div
+        initial={{ opacity: 0, y: 10, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: -10, scale: 0.95 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+        className="absolute -top-12 left-1/2 -translate-x-1/2 
+                   bg-blue-600 text-white text-xs sm:text-sm 
+                   px-4 py-2 rounded-lg shadow-lg whitespace-nowrap"
+      >
+        ✅ Email copied!
+      </motion.div>
+    )}
+  </AnimatePresence>
+</div>
+
+
       
       <Link
         href="https://github.com/muhammadayaz77"
@@ -166,7 +184,7 @@ export default function Hero() {
       </Link>
 
       <Link
-        href="https://twitter.com/your-username"
+        href="https://twitter.com/muhammadayaz"
         target="_blank"
         className="p-2 sm:p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-colors"
       >

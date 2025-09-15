@@ -84,8 +84,6 @@ export default function Hero() {
 
       </div>
 
-      {/* Decorative green circle */}
-      <div className="absolute left-1/2 top-[29%] w-4 h-4 bg-blue-500 rounded-full lg:block hidden"></div>
 
       {/* Main heading */}
       <div className="mb-12">
@@ -128,6 +126,8 @@ export default function Hero() {
       {/* Social links and resume */}
       <div className="flex flex-wrap items-center gap-4 mb-8">   
       <motion.a
+       href="/Muhammad Ayaz.pdf" // Place your resume file inside public/resume.pdf
+      download="Muhammad_Ayaz_Resume.pdf"
   className="bg-transparent border border-gray-600 text-sm sm:text-base text-white 
              hover:bg-gray-800 rounded-full px-4 sm:px-6 py-2 
              flex items-center gap-2 cursor-pointer transition"

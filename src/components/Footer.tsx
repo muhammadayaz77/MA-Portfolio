@@ -22,18 +22,16 @@ export default function Footer() {
   height={90}
   className="transition-transform duration-300 hover:scale-110 rounded-lg"
 />
-</Link>
 
           <p className="text-sm text-gray-400 mt-2">
-            <Link
-              href="https://your-portfolio.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-white transition-colors duration-300"
-            >
+            <div
+             
+             className="hover:text-white transition-colors duration-300"
+             >
               Muhammad Ayaz
-            </Link>
+            </div>
           </p>
+              </Link> 
         </div>
 
         {/* About Section */}

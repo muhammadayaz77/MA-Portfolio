@@ -7,7 +7,7 @@ import React from 'react'
 export default function Home() {
   return (
     <div className="min-h-screen sm:mx-10 mx-5 max-w-[100%]">
-      <main className='min-h-screen text-white pt-10 mx-auto'>
+      <main className='min-h-screen text-white pt-10 mx-auto px-3'>
         <Hero />
         <Skill />
         <Projects />

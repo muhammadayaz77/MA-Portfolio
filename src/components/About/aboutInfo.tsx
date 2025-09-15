@@ -6,7 +6,7 @@ export default function AboutInfo() {
       {/* Left Side - Text */}
       <div className=" space-y-6 w-full lg:w-1/2">
         <h1 className="relative inline-block text-2xl sm:text-3xl md:text-4xl font-bold">
-          I'm Ayaz
+          I&apos;m Ayaz
           <span className="absolute left-0 -bottom-[5px] w-1/2 h-[3px] bg-blue-500 rounded-md"></span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg leading-relaxed">

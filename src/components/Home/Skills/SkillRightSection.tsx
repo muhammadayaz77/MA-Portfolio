@@ -121,7 +121,7 @@ export function SkillRightSection() {
                               <h3 className="font-semibold text-white text-sm sm:text-base md:text-lg">
                                 {exp.title}
                               </h3>
-                              <span className="bg-gray-700 text-gray-200 text-[10px] sm:text-xs md:text-sm font-medium px-2.5 py-0.5 rounded">
+                              <span className="bg-gray-700 text-gray-200 text-[10px] sm:text-xs md:text-sm font-medium px-2.5 py-0.5 rounded whitespace-nowrap">
                                 {exp.period}
                               </span>
                             </div>
@@ -168,7 +168,7 @@ export function SkillRightSection() {
                       <h4 className="font-semibold text-white text-sm sm:text-base md:text-lg">
                         {edu.degree}
                       </h4>
-                      <span className="bg-blue-600 text-white text-[10px] sm:text-xs md:text-sm font-medium px-2.5 py-0.5 rounded">
+                      <span className="bg-blue-600 text-white text-[10px] sm:text-xs md:text-sm font-medium px-2.5 py-0.5 rounded text-nowrap">
                         {edu.year}
                       </span>
                     </div>

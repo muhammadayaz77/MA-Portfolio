@@ -20,11 +20,11 @@ export default function ProjectThirdSection() {
     <div className=" bg-black text-white max-w-7xl mx-auto">
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {/* First Card */}
-        <div className="flex flex-col justify-between rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm shadow-lg shadow-black/40 overflow-hidden transition hover:scale-[1.02]">
+        <div className="flex flex-col justify-between rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm shadow-lg shadow-black/40 overflow-hidden transition hover:scale-[1.02]"> 
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
           <Image
-              src="/job-portal.png"
+              src="/job-portal.PNG"
               alt="Job Portal System"
               width={500}
               height={200}
@@ -135,7 +135,7 @@ export default function ProjectThirdSection() {
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
             <Image
-              src="/saylani.png"
+              src="/saylani.PNG"
               alt="Saylani Foundation"
               width={500}
               height={200}
@@ -244,7 +244,7 @@ export default function ProjectThirdSection() {
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
           <Image
-              src="/health-care.png"
+              src="/health-care.PNG"
               alt="Health Care"
               width={500}
               height={200}
@@ -351,7 +351,7 @@ export default function ProjectThirdSection() {
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
             <Image
-              src="/saylaniform.png"
+              src="/saylaniform.PNG"
               alt="Saylani Form Project"
               width={500}
               height={200}

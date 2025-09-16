@@ -185,30 +185,49 @@ export function SkillRightSection() {
 
             {/* Certifications */}
             <div className="rounded-lg shadow-lg border border-gray-800 bg-gray-900/60">
-              <div className="p-4 sm:p-5 md:p-6 border-b border-gray-700">
-                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white">
-                  Certifications
-                </h3>
-              </div>
-              <div className="p-3 sm:p-4 md:p-6 space-y-3">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-lg border border-gray-800 bg-gray-900/60">
-                  <span className="font-medium text-white text-xs sm:text-sm md:text-base">
-                    Web And Mobile App Development
-                  </span>
-                  <span className="sm:bg-gray-700 text-gray-200 text-[10px] sm:text-xs md:text-sm font-medium sm:px-2.5 py-0.5 rounded">
-                    2024
-                  </span>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-lg border border-gray-800 bg-gray-900/60">
-                  <span className="font-medium text-white text-xs sm:text-sm md:text-base">
-                    Machine Learning Specialization
-                  </span>
-                  <span className="sm:bg-gray-700 text-gray-200 text-[10px] sm:text-xs md:text-sm font-medium sm:px-2.5 py-0.5 rounded ">
-                    2025
-                  </span>
-                </div>
-              </div>
-            </div>
+  <div className="p-4 sm:p-5 md:p-6 border-b border-gray-700">
+    <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white">
+      Certifications
+    </h3>
+  </div>
+  <div className="p-3 sm:p-4 md:p-6 space-y-3">
+  {/* Web and Mobile App Development */}
+  <a
+    href="/WebAndAppDevelopment_M_Ayaz.png" // file in public
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block cursor-pointer"
+  >
+    <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-lg border border-gray-800 bg-gray-900/60 hover:bg-gray-800/80 transition">
+      <span className="font-medium text-white text-xs sm:text-sm md:text-base">
+        Web And Mobile App Development
+      </span>
+      <span className="sm:bg-gray-700 text-gray-200 text-[10px] sm:text-xs md:text-sm font-medium sm:px-2.5 py-0.5 rounded">
+        2024
+      </span>
+    </div>
+  </a>
+
+  {/* Machine Learning Specialization */}
+  <a
+    href="/Coursera_supervised_learning_certificate.pdf" // file in public
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block cursor-pointer"
+  >
+    <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded-lg border border-gray-800 bg-gray-900/60 hover:bg-gray-800/80 transition">
+      <span className="font-medium text-white text-xs sm:text-sm md:text-base">
+        Machine Learning Specialization
+      </span>
+      <span className="sm:bg-gray-700 text-gray-200 text-[10px] sm:text-xs md:text-sm font-medium sm:px-2.5 py-0.5 rounded">
+        2025
+      </span>
+    </div>
+  </a>
+</div>
+
+</div>
+
           </div>
         </div>
       </div>

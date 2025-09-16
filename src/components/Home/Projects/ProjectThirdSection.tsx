@@ -1,6 +1,7 @@
 "use client";
 import { Code, Github } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   siTypescript,
   siJavascript,
@@ -32,9 +33,11 @@ export default function ProjectThirdSection() {
         <div className="flex flex-col justify-between rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm shadow-lg shadow-black/40 overflow-hidden transition hover:scale-[1.02]">
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
-            <img
+          <Image
               src="/job-portal.png"
               alt="Job Portal System"
+              width={500}
+              height={200}
               className="h-full w-full object-cover opacity-80 hover:opacity-100 transition"
             />
           </div>
@@ -141,9 +144,11 @@ export default function ProjectThirdSection() {
         <div className="flex flex-col justify-between rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm shadow-lg shadow-black/40 overflow-hidden transition hover:scale-[1.02]">
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
-            <img
+            <Image
               src="/saylani.png"
               alt="Saylani Foundation"
+              width={500}
+              height={200}
               className="h-full w-full object-cover opacity-80 hover:opacity-100 transition"
             />
           </div>
@@ -248,9 +253,11 @@ export default function ProjectThirdSection() {
         <div className="flex flex-col justify-between rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm shadow-lg shadow-black/40 overflow-hidden transition hover:scale-[1.02]">
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
-            <img
+          <Image
               src="/health-care.png"
-              alt="Health Center"
+              alt="Health Care"
+              width={500}
+              height={200}
               className="h-full w-full object-cover opacity-80 hover:opacity-100 transition"
             />
           </div>
@@ -353,9 +360,11 @@ export default function ProjectThirdSection() {
         <div className="flex flex-col justify-between rounded-xl border border-gray-800 bg-gray-900/60 backdrop-blur-sm shadow-lg shadow-black/40 overflow-hidden transition hover:scale-[1.02]">
           {/* Image section */}
           <div className="h-40 bg-gray-800 flex items-center justify-center">
-            <img
+            <Image
               src="/saylaniform.png"
-              alt="Health Center"
+              alt="Saylani Form Project"
+              width={500}
+              height={200}
               className="h-full w-full object-cover opacity-80 hover:opacity-100 transition"
             />
           </div>

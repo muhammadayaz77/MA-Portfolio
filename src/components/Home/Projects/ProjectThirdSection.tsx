@@ -1,24 +1,16 @@
 "use client";
-import { Code, Github } from "lucide-react";
+import {  Github } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  siTypescript,
-  siJavascript,
-  siPython,
-  siCplusplus,
   // Frontend
   siReact,
-  siNextdotjs,
   siTailwindcss,
   siShadcnui,
   // Backend
   siNodedotjs,
   siExpress,
   siMongodb,
-  siPostgresql,
-  siMysql,
-  siJsonwebtokens,
   siRedux,
   // Cloud
   siVercel,

@@ -13,8 +13,6 @@ import {
   siMongodb,
   siRedux,
   // Cloud
-  siVercel,
-  siFirebase,
 } from "simple-icons/icons";
 
 export default function ProjectThirdSection() {

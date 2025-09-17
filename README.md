@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+---
+
+# 📌 Muhammad Ayaz – Portfolio
+
+![Portfolio Banner](./public/portfolio.PNG)
+
+<!-- Replace with your real portfolio banner or screenshot image -->
+
+---
+
+## 👨‍💻 About Me
+
+Hi, I’m **Muhammad Ayaz**, a passionate **MERN Stack Developer** dedicated to building scalable, responsive, and user-friendly web applications.
+
+This repository contains the source code for my **personal portfolio website**, where I showcase my projects, skills, and journey as a developer. The portfolio reflects my expertise in:
+
+* **Frontend:** React.js, Next.js, Tailwind CSS, Typescript
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB,PostgreSQL
+* **Other:** Git, GitHub, Firebase, REST APIs, Postman,Prisma
+
+---
+
+## 🎯 Features
+
+* 🖼️ Clean & modern design
+* 📱 Fully responsive across devices
+* ⚡ Built with Next.js + Tailwind CSS + Typescript
+* 🎨 Easy to customize & extend
+
+---
+
+## 🚀 Live Demo
+
+👉 [View Portfolio Website](http://muhammadayaz.vercel.app)
+
+---
+
+## 🛠️ Installation & Usage
+
+To run this project locally:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/muhammadayaz77/MA-Portfolio.git  
+
+# Navigate to the project folder
+cd MA-Portfolio  
+
+# Install dependencies
+npm install  
+
+# Run the development server
+npm run dev  
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The portfolio will be live at:
+👉 `https://muhammadayaz.vercel.app`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+I’m always open to feedback and suggestions!
 
-To learn more about Next.js, take a look at the following resources:
+* Fork this repo
+* Create a new branch (`feature-branch`)
+* Commit your changes
+* Open a pull request 🚀
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📜 License
 
-## Deploy on Vercel
+This project is licensed under the **MIT License** – you’re free to use, modify, and distribute.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+© 2025 Muhammad Ayaz
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+✨ *Thanks for visiting my portfolio! Feel free to connect with me on [LinkedIn](https://linkedin.com/in/-muhammadayaz) or check out my other projects on [GitHub](https://github.com/muhammadayaz77).*
+

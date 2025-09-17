@@ -65,7 +65,6 @@ export default function ContactUs() {
               <button onClick={handleCopy}>
                 <Mail className="w-6 h-6 hover:text-blue-400 transition-colors cursor-pointer" />
               </button>
-
               <AnimatePresence>
                 {copied && (
                   <motion.div
@@ -167,12 +166,13 @@ export default function ContactUs() {
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="fixed bottom-6 left-1/2 -translate-x-1/2 
                        bg-green-600 text-white text-sm sm:text-base
-                       px-6 py-3 rounded-lg shadow-lg"
+                       px-6 py-3 rounded-lg shadow-lg z-50"
           >
-            ✅ Your message has been saved locally!
+            ✅ Your message has been sent!
           </motion.div>
         )}
       </AnimatePresence>
+     
     </section>
   );
 }

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function SkillsPage() {
   return (
-    <div className='pt-28'>
+    <div className='pt-28 mx-3 sm:mx-10 md:mx-20'>
     <Skill />
     </div>
   )

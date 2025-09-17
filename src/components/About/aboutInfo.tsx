@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutInfo() {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen px-6 pt-28 text-gray-100 gap-10 lg:gap-16">
+    <section className="flex flex-col lg:flex-row items-center justify-between min-h-screen pt-28 text-gray-100 gap-10 lg:gap-16">
       {/* Left Side - Text */}
       <div className=" space-y-6 w-full lg:w-1/2">
         <h1 className="relative inline-block text-2xl sm:text-3xl md:text-4xl font-bold">

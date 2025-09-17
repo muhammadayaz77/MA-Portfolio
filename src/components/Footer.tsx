@@ -7,10 +7,10 @@ export default function Footer() {
     <footer className="w-full border-t border-gray-800 bg-black text-gray-300">
       {/* Top divider with small centered pill */}
       <div className="relative flex justify-center">
-        <div className="absolute -top-[3.9px] h-[8px] w-10 rounded-full bg-white"></div>
+        <div className="absolute -top-[3.9px] h-[8px] w-10  rounded-full bg-white z-10"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-6 py-24">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 py-24 px-3 sm:px-10 md:px-20">
         {/* Logo + Name */}
         <div className="space-y-2">
         <Link href='/'>

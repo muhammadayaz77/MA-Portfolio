@@ -4,7 +4,7 @@
 
 # 📌 Muhammad Ayaz – Portfolio
 
-![Portfolio Banner](D:\SMIT\Portfolio\my-portfolio\public\portfolio.PNG)
+![Portfolio Banner](./public/portfolio.PNG)
 
 <!-- Replace with your real portfolio banner or screenshot image -->
 

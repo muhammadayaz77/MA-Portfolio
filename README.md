@@ -4,7 +4,7 @@
 
 # 📌 Muhammad Ayaz – Portfolio
 
-![Portfolio Banner](./public/portfolio.png)
+![Portfolio Banner](D:\SMIT\Portfolio\my-portfolio\public\portfolio.PNG)
 
 <!-- Replace with your real portfolio banner or screenshot image -->
 
@@ -34,7 +34,7 @@ This repository contains the source code for my **personal portfolio website**, 
 
 ## 🚀 Live Demo
 
-👉 [View Portfolio Website]([http://muhammadayaz.vercel.app])
+👉 [View Portfolio Website](http://muhammadayaz.vercel.app)
 
 ---
 

@@ -57,7 +57,7 @@ npm run dev
 ```
 
 The portfolio will be live at:
-👉 `http://muhammadayaz.vercel.app`
+👉 `https://muhammadayaz.vercel.app`
 
 ---
 

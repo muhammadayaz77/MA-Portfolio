@@ -34,7 +34,7 @@ This repository contains the source code for my **personal portfolio website**, 
 
 ## 🚀 Live Demo
 
-👉 [View Portfolio Website](https://-muhammadayaz)
+👉 [View Portfolio Website]([https://-muhammadayaz](http://muhammadayaz.vercel.app))
 
 ---
 
@@ -80,5 +80,5 @@ This project is licensed under the **MIT License** – you’re free to use, mod
 
 ---
 
-✨ *Thanks for visiting my portfolio! Feel free to connect with me on [LinkedIn](https://linkedin.com/in/your-profile) or check out my other projects on [GitHub](https://github.com/muhammadayaz77).*
+✨ *Thanks for visiting my portfolio! Feel free to connect with me on [LinkedIn](https://linkedin.com/in/-muhammadayaz) or check out my other projects on [GitHub](https://github.com/muhammadayaz77).*
 
